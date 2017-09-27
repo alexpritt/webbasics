@@ -1,0 +1,57 @@
+body {
+  background: cover;
+  color: 00FFA1;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+h1 {
+    animation: myAnimation2 1s linear;
+}
+
+h2 {
+  animation: myAnimation 3s linear infinite;
+}
+
+p {
+  color: 00FFA1;
+  font-variant: small-caps;
+}
+
+button {
+  color: 00C17A;
+  font-variant: small-caps;
+  transition-duration: 10s;
+}
+
+html {
+  background: url(https://wallpapercave.com/wp/tk2j9LI.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 20%;
+}
+
+@keyframes myAnimation {
+  from {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  } to {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes myAnimation2 {
+  from {
+    transform: scale(100);
+  } to {
+    transform: scale(1);
+  }
+}
